@@ -1,73 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="h-100" lang="en">
 
-  <head>
-      <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-  <meta name="description" content="A well made and handcrafted Bootstrap 5 template">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
-  <meta name="author" content="Holger Koenemann">
-  <meta name="generator" content="Eleventy v2.0.0">
-  <meta name="HandheldFriendly" content="true">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+  <meta name="description" content="A well made and handcrafted Bootstrap 5 template" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png" />
+  <meta name="author" content="Holger Koenemann" />
+  <meta name="generator" content="Eleventy v2.0.0" />
+  <meta name="HandheldFriendly" content="true" />
   <title>Register a new account</title>
-  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/form.css" />
+</head>
 
+<body class="d-flex h-100 w-100 bg-black text-white" data-bs-spy="scroll" data-bs-target="#navScroll">
+  <div class="h-100 container-fluid">
+    <div class="h-100 row d-flex align-items-stretch">
+      <div class="col-12 col-md-7 col-lg-6 col-xl-5 d-flex align-items-start flex-column px-vw-5">
+        <header class="mb-auto py-vh-2 col-12">
+          <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="index.html">
+            <img src="img/logo.svg" alt="Logo Kumpel" />
+          </a>
+        </header>
+        <main class="mb-auto col-12">
+          <h1>Contanos tu idea.</h1>
 
-  </head>
-
-  <body class="d-flex h-100 w-100 bg-black text-white" data-bs-spy="scroll" data-bs-target="#navScroll">
-
-    <div class="h-100 container-fluid">
-      <div class="h-100 row d-flex align-items-stretch">
-        
-          <div class="col-12 col-md-7 col-lg-6 col-xl-5 d-flex align-items-start flex-column px-vw-5">
-          
-            <header class="mb-auto py-vh-2 col-12">
-              <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="index.html">
-                <img src="img/logo.svg" alt="Logo Kumpel">
-  
-</a>
-
-            </header>
-            <main class="mb-auto col-12">
-              <h1>Contanos tu idea.</h1>
-              
-<form class="row">
-  <div class="col-12">
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Nombre</label>
-    <input type="email" class="form-control form-control-lg bg-gray-800 border-dark" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">Como te gusta que te llamen</div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email</label>
-    <input type="email" class="form-control form-control-lg bg-gray-800 border-dark" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">Deja tu email para que te podamos contactar</div>
-  </div>
-  <div class="mb-3">
+          <form class="row php-email-form" action="./contact-form/contact_me.php" method="post" role="form">
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="formName" class="form-label">Nombre</label>
+                <input type="text" class="form-control form-control-lg bg-gray-800 border-dark" id="formName"
+                  name="formName" aria-describedby="emailHelp" />
+                <div id="emailHelp" class="form-text">
+                  Como te gusta que te llamen
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="formEmail" class="form-label">Email</label>
+                <input type="email" class="form-control form-control-lg bg-gray-800 border-dark" id="formEmail"
+                  name="formEmail" aria-describedby="emailHelp" />
+                <div id="emailHelp" class="form-text">
+                  Deja tu email para que te podamos
+                  contactar
+                </div>
+              </div>
+              <!-- <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Teléfono</label>
     <input type="email" class="form-control form-control-lg bg-gray-800 border-dark" id="exampleInputEmail1" aria-describedby="emailHelp">
     <div id="emailHelp" class="form-text">Si lo prefieres te podemos contactar por teléfono</div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Mensaje</label>
-    <input type="email" class="form-control form-control-lg bg-gray-800 border-dark" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">Contanos de que trata tu idea.</div>
-  </div>
-  
-  <button type="submit" class="btn btn-white btn-xl mb-4">¡Enviar!</button>
-</div>
-</form>
+  </div> -->
+              <div class="mb-3">
+                <label for="formMessage" class="form-label">Mensaje</label>
+                <textarea type="textarea" class="form-control form-control-lg bg-gray-800 border-dark" id="formMessage"
+                  name="formMessage" aria-describedby="emailHelp"
+                  placeholder="Contanos de que trata tu idea.."></textarea>
+                <!-- <div id="emailHelp" class="form-text">Contanos de que trata tu idea.</div> -->
+              </div>
+              <button type="submit" class="btn btn-white btn-xl mb-4" id="formSubmitButton">
+                ¡Enviar!
+              </button>
+              <div class="my-3">
+                <div class="loading">Cargando</div>
+                <div class="error-message">
+                  Ha ocurrido un problema, intente
+                  nuevamente
+                </div>
+                <div class="sent-message">
+                  Tu mensaje fue enviado, muchas gracias!
+                </div>
+              </div>
+            </div>
+          </form>
+        </main>
+      </div>
 
-            </main>
-          </div>
-          
-            <div class="col-12 col-md-5 col-lg-6 col-xl-7 gradient"></div>
-          
-        </div>
+      <div class="col-12 col-md-5 col-lg-6 col-xl-7 gradient"></div>
+    </div>
+  </div>
 
-      </div></body>
-    </html>
+  <script src="./js/validate.js"></script>
+</body>
+
+</html>
