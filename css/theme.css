@@ -9048,7 +9048,7 @@ img {
   border-bottom: 2px solid #fff; }
 
 .gradient {
-  background: linear-gradient(90deg, rgba(45,32,54,1) 0%, rgba(163,107,25,1) 50%, rgba(255,152,0,1) 100%); }
+  background: linear-gradient(125deg, rgba(255,152,0,1) 0%, rgba(35,35,35,1) 100%); }
 
 .display-4 {
   font-weight: 500; }
