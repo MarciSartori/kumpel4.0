@@ -1,5 +1,6 @@
 const buttonToggle = document.querySelector('.button-toggle');
 const navList = document.querySelector('.navbar-nav');
+const navLink = document.querySelectorAll('.nav-link');
 
 const add_class_on_scroll2 = () => navList.classList.add("heightOnScroll")
 const remove_class_on_scroll2 = () => navList.classList.remove("heightOnScroll")
@@ -13,6 +14,11 @@ window.addEventListener('scroll', function () {
   })
 
 buttonToggle.addEventListener('click', () => {
-    navList.classList.toggle('navbar-nav--active');
+  navList.classList.toggle('navbar-nav--active');
+})
 
+navLink.forEach(item => {
+  item.addEventListener('click', () => {
+    navList.classList.toggle('navbar-nav--active')
+  })
 })
