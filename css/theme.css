@@ -74,7 +74,12 @@
   :root {
     scroll-behavior: smooth; } }
 
-  /* Estilos glass */  
+  /* Estilos glass */ 
+
+.btn-kump a:hover{
+  text-decoration: none!important;
+  color: black!important;  
+}
 
 .glastyle {
   background: rgba(17, 17, 17, 0.8)!important;
