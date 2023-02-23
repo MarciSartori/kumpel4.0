@@ -14,7 +14,7 @@ $email_address = strip_tags(htmlspecialchars($_POST['formEmail']));
 $message = strip_tags(htmlspecialchars($_POST['formMessage']));
    
 // Create the email and send the message
-$to = 'lonardibautista@gmail.com'; // Add your email address inbetween the '' replacing yourformName@yourdomain.com - This is where the form will send a message to.
+$to = 'kumpelconsultora@gmail.com'; // Add your email address inbetween the '' replacing yourformName@yourdomain.com - This is where the form will send a message to.
 $email_subject = "Contacto de:  $formName";
 $email_body = "Contacto recibido desde la web.\n\n"."Detalles:\n\nNombre: $formName\n\nEmail: $email_address\n\nMensaje:\n$message";
 
@@ -22,7 +22,7 @@ $email_body = "Contacto recibido desde la web.\n\n"."Detalles:\n\nNombre: $formN
 ini_set('display_errors','1');
 ini_set('display_startup_errors','1');
 
-$mailFrom = 'lonardibautista@gmail.com';
+$mailFrom = 'kumpelconsultora@gmail.com';
 $headers = 'MIME-Version: 1.0'."\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8'."\r\n";
 $headers .= "X-Priority: 3\n";
