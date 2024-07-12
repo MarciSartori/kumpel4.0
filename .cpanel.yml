@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/example/public_html/
-    - /usr/bin/rsync -av --delete dist/ $DEPLOYPATH
+    - export DEPLOYPATH=/home/ipoweljp/public_html/
+    - /usr/bin/rsync -av --delete . $DEPLOYPATH
