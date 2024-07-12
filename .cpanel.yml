@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/ipoweljp/public_html/
-    - /usr/bin/rsync -av --delete . $DEPLOYPATH
+    - /bin/rsync -av --delete . $DEPLOYPATH
